@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_weight="1"
+        android:scaleType="center"
+        app:lottie_rawRes="@raw/girl_on_the_bicycle"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Length"
+        android:textSize="45sp"
+        android:fontFamily="@font/lobster_regular"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="20"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/lobster_regular"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate"
+        android:textStyle="bold"
+        android:fontFamily="@font/lobster_regular"
+        android:background="@color/teal_200"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+
+        />
+
+
+</LinearLayout>
